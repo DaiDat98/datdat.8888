@@ -1,9 +1,29 @@
 <template>
     <div class="wrapper-popup" v-bind:class="getClassPopup">
         <div class="rule">
-            <h3>Luật chơi</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iure quia facere aut. Nostrum fuga accusamus, minima, facilis explicabo minus, blanditiis eos nisi culpa optio voluptates cumque ducimus in adipisci.</p>
-            <button 
+           <h3>Luật chơi</h3>
+            <p>isPlaying: true <br>
+score -> Có 2 điểm chính thức hành cho 2 người chơi <br>
+dice1 - dice2 <br>
+    activePlayer: 1 -> Người thứ nhất đang chơi <br>
+    activePlayer: 2 -> Người thứ hai đang chơi
+<br>
+NewGame  <br>
+    1. Show Popup <br>
+    2. Reset Data  <br>
+    3. Xay dựng Popup  <br>
+<br>
+Roll Dice  <br>
+    1. Random dư liệu 2 con xúc xắc  <br>
+    2. Kiểm tra xem người dùng có xoay đúng con số 1 không?  <br>
+        2.1. Nếu xoay trúng số 1 -> Đổi lượt chơi -> Reset điểm tạm thời  <br>
+        2.2. Nếu xoay ok -> Cộng dồn vào điểm tạm thời cho người chơi đó.  <br>
+<br>
+Hold -> Lấy điểm  <br> 
+    1. So sánh xem điểm cuối cùng lớn hơn FinalScore???  <br>
+    2. Chưa đủ điểm -> Cộng dồn 'ĐIỂM CHÍNH THỨC' => Đổi lượt chơi <br>
+</p>
+<b>copyright by datdat_cd18tt5 <br> </b>
                 v-on:click="confirm"
                 class="confirm">Đã hiểu</button>
         </div>
